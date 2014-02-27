@@ -1,0 +1,36 @@
+<h1>An AJAX Request Test App</h1>
+
+<p>
+  This Sinatra app has one purpose: to try testing different kinds of AJAX requests. There are several routes that each return a different kind of information that can be parsed into an AJAX object. These include:
+</p>
+
+<h2>/state</h2>
+
+<p>
+  Takes a state_code, returns information about a state.
+  <br>
+  <br>
+  Example Data:
+  <br>
+  {state_code: NY}
+  <br>
+  Returns:
+  <br>
+  <i>Object {type: "state", name: "New York"}</i>
+</p>
+
+<h2>/geolocate</h2>
+
+<p>
+  Takes an ip_address, returns information on that IP address.
+  <br>
+  <br>
+  Example Data:
+  <br>
+  {ip_address: "192.76.2.114"}
+  <br>
+  Returns:
+  <br>
+  "{"ip":"192.76.2.114","country_code":"US","country_name":"United States","region_code":"CA","region_name":"California","city":"Van Nuys","zipcode":"91411","latitude":34.1792,"longitude":-118.4616,"metro_code":"803","areacode":"818"}"
+</p>
+
